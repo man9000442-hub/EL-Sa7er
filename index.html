@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>El-Sa7er</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- أيقونات Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+  <div class="overlay"></div>
+  <header>
+    <h1>مستر سامر شاكر عوض</h1>
+    <h2>   EL_SA7ER   </h2>
+    <h3>مادة الرياضيات -  اعدادي و ثانوي</h3>
+    <p>📍 سنتر الساحر المستعمره - سنتر التميز عبدالقادر</p>
+    <p>
+      📞 <a href="https://wa.me/201280707731" target="_blank">01280707731 :واتساب</a> 
+    </p>
+
+    <p> <a href="https://wa.me/201554077340" target="_blank">01554077340 :واتساب</a>  </p>
+
+    <p>
+      📞  <a href="tel:01554077340">تليفون: 01554077340</a>
+    </p>
+    <p>
+           <a href="tel:01280707731">01280707731 :تليفون</a>
+    </p>
+  </header>
+
+  <main>
+    <div class="container">
+      <!-- إعدادي -->
+      <section class="stage">
+        <div class="stage-box prep">إعدادي</div>
+        <div class="grid">
+          <div class="icon" onclick="showSchedule('prep1')">
+            <div class="circle">1</div>
+            <p>الأول الإعدادي</p>
+          </div>
+          <div class="icon" onclick="showSchedule('prep2')">
+            <div class="circle">2</div>
+            <p>الثاني الإعدادي</p>
+          </div>
+          <div class="icon" onclick="showSchedule('prep3')">
+            <div class="circle">3</div>
+            <p>الثالث الإعدادي</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ثانوي -->
+      <section class="stage">
+        <div class="stage-box secondary">ثانوي</div>
+        <div class="grid">
+          <div class="icon" onclick="showSchedule('sec1')">
+            <div class="circle">1</div>
+            <p>الأول الثانوي</p>
+          </div>
+          <div class="icon" onclick="showSchedule('sec2')">
+            <div class="circle">2</div>
+            <p>الثاني الثانوي</p>
+          </div>
+          <div class="icon" onclick="showSchedule('sec3')">
+            <div class="circle">3</div>
+            <p>الثالث الثانوي</p>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- نافذة المواعيد -->
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup()">&times;</span>
+      <h3 id="class-title"></h3>
+      <div id="schedule-list"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
